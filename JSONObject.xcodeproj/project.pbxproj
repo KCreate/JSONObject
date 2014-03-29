@@ -22,6 +22,7 @@
 		F4A5599118E6EA2A006F7AD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4A5598F18E6EA2A006F7AD1 /* InfoPlist.strings */; };
 		F4A5599318E6EA2A006F7AD1 /* JSONObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5599218E6EA2A006F7AD1 /* JSONObjectTests.m */; };
 		F4A5599E18E6EA37006F7AD1 /* LSJSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5599D18E6EA37006F7AD1 /* LSJSONObject.m */; };
+		F4D19D1518E73DDB00EDF144 /* updateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D19D1418E73DDB00EDF144 /* updateButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		F4A5599218E6EA2A006F7AD1 /* JSONObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONObjectTests.m; sourceTree = "<group>"; };
 		F4A5599C18E6EA37006F7AD1 /* LSJSONObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSJSONObject.h; sourceTree = "<group>"; };
 		F4A5599D18E6EA37006F7AD1 /* LSJSONObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSJSONObject.m; sourceTree = "<group>"; };
+		F4D19D1318E73DDB00EDF144 /* updateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = updateButton.h; sourceTree = "<group>"; };
+		F4D19D1418E73DDB00EDF144 /* updateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = updateButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				F4A5596E18E6EA2A006F7AD1 /* Supporting Files */,
 				F4A5599C18E6EA37006F7AD1 /* LSJSONObject.h */,
 				F4A5599D18E6EA37006F7AD1 /* LSJSONObject.m */,
+				F4D19D1318E73DDB00EDF144 /* updateButton.h */,
+				F4D19D1418E73DDB00EDF144 /* updateButton.m */,
 			);
 			path = JSONObject;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				F4A5599E18E6EA37006F7AD1 /* LSJSONObject.m in Sources */,
 				F4A5597818E6EA2A006F7AD1 /* AppDelegate.m in Sources */,
 				F4A5597418E6EA2A006F7AD1 /* main.m in Sources */,
+				F4D19D1518E73DDB00EDF144 /* updateButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +391,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JSONObject/JSONObject-Prefix.pch";
 				INFOPLIST_FILE = "JSONObject/JSONObject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -398,6 +405,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JSONObject/JSONObject-Prefix.pch";
 				INFOPLIST_FILE = "JSONObject/JSONObject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -462,6 +470,7 @@
 				F4A5599818E6EA2A006F7AD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4A5599918E6EA2A006F7AD1 /* Build configuration list for PBXNativeTarget "JSONObjectTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +479,7 @@
 				F4A5599B18E6EA2A006F7AD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

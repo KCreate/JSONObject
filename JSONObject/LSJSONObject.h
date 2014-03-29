@@ -9,10 +9,8 @@
 #import <Foundation/Foundation.h>
 @class LSJSONObject;
 @protocol LSJSONObjectDelegate
-
-@required
+@optional
 -(void)LSJSONObjectFinishedLoadingData;
-
 @end
 
 @interface LSJSONObject : NSObject <NSURLConnectionDelegate>

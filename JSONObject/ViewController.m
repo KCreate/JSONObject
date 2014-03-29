@@ -16,6 +16,7 @@
     LSJSONObject *jsonObject;
     NSString *defaultURL;
 }
+@synthesize indexLabel, titleLabel, opLabel, articleView;
 
 - (void)viewDidLoad
 {
@@ -28,11 +29,11 @@
     */
 }
 
-- (void)LSJSONObjectFinishedLoadingData {
-    /*
-     Do anything you want with the data here
-     */
-    NSLog(@"%@", [jsonObject objectAtIndex:2 forKey:@"op"]);
+- (void)updateText:(id)sender {
+    titleLabel.text = [jsonObject objectAtIndex:[indexLabel.text integerValue] forKey:@"title"];
+    opLabel.text = [jsonObject objectAtIndex:[indexLabel.text integerValue] forKey:@"op"];
+    articleView.text = [jsonObject objectAtIndex:[indexLabel.text integerValue] forKey:@"article"];
+    [self.view endEditing:YES];
 }
 
 @end

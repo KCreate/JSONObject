@@ -10,5 +10,10 @@
 #import "LSJSONObject.h"
 
 @interface ViewController : UIViewController <LSJSONObjectDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *indexLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *opLabel;
+@property (weak, nonatomic) IBOutlet UITextView *articleView;
+- (IBAction)updateText:(id)sender;
 
 @end
